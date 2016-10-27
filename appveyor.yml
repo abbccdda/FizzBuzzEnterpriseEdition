@@ -1,5 +1,6 @@
 install:
   - cmd: java -version
+  - "%PYTHON%/Scripts/pip.exe install codecov"
 
 test_script:
   - mvn test
