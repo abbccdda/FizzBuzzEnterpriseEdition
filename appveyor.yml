@@ -3,6 +3,7 @@ environment:
 
 install:
   - cmd: java -version
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   - "%PYTHON%/Scripts/pip.exe install codecov"
 
 test_script:
